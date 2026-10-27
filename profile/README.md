@@ -1,7 +1,7 @@
 <h1 align="center">Scale Research</h1>
 
 <p align="center">
-  Open-source tools for machine learning research, from autonomous experiment loops to reinforcement learning on new accelerators.
+  Open-source tools for machine learning research: a platform where LLM agents run ML research autonomously, and reinforcement learning on Tenstorrent accelerators.
 </p>
 
 <p align="center">
@@ -10,6 +10,14 @@
 </p>
 
 ---
+
+## [HypothesisLoop](https://github.com/scaleresearch/hypothesisloop)
+
+The control plane for autonomous ML research. State an objective and the metrics that define success, and a team of LLM agents proposes hypotheses, tests them as real jobs on your compute and records every result, so each claim can be traced and rerun.
+
+<img src="https://raw.githubusercontent.com/scaleresearch/hypothesisloop/main/docs/screenshots/hypothesis-graph.png" width="100%" alt="HypothesisLoop hypothesis graph">
+
+Its scheduler spans Kubernetes clusters, bare-metal nodes and rented compute, across NVIDIA GPUs, Tenstorrent chips, TPUs and CPUs. New experiments start from [hypothesisloop-experiment-template](https://github.com/scaleresearch/hypothesisloop-experiment-template).
 
 ## [tt-rl](https://github.com/scaleresearch/tt-rl)
 
@@ -25,14 +33,6 @@ Reinforcement learning on Tenstorrent hardware. DQN, PPO and SAC written nativel
 </table>
 
 Each agent was trained on a single Blackhole chip. The weights are on [Hugging Face](https://huggingface.co/scaleresearch).
-
-## [HypothesisLoop](https://github.com/scaleresearch/hypothesisloop)
-
-The control plane for autonomous ML research. State an objective and the metrics that define success, and a team of LLM agents proposes hypotheses, tests them as real jobs on your compute and records every result, so each claim can be traced and rerun.
-
-<img src="https://raw.githubusercontent.com/scaleresearch/hypothesisloop/main/docs/screenshots/hypothesis-graph.png" width="100%" alt="HypothesisLoop hypothesis graph">
-
-Its scheduler spans Kubernetes clusters, bare-metal nodes and rented compute, across NVIDIA GPUs, Tenstorrent chips, TPUs and CPUs. New experiments start from [hypothesisloop-experiment-template](https://github.com/scaleresearch/hypothesisloop-experiment-template).
 
 ---
 
