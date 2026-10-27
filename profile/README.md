@@ -1,7 +1,7 @@
 <h1 align="center">Scale Research</h1>
 
 <p align="center">
-  Open-source tools for machine learning research: a platform where LLM agents run ML research autonomously, and reinforcement learning on Tenstorrent accelerators.
+  We build open-source infrastructure for machine learning research, from autonomous research agents to training on new accelerators.
 </p>
 
 <p align="center">
@@ -11,7 +11,9 @@
 
 ---
 
-## [HypothesisLoop](https://github.com/scaleresearch/hypothesisloop)
+## Projects
+
+### [HypothesisLoop](https://github.com/scaleresearch/hypothesisloop)
 
 The control plane for autonomous ML research. State an objective and the metrics that define success, and a team of LLM agents proposes hypotheses, tests them as real jobs on your compute and records every result, so each claim can be traced and rerun.
 
@@ -19,7 +21,7 @@ The control plane for autonomous ML research. State an objective and the metrics
 
 Its scheduler spans Kubernetes clusters, bare-metal nodes and rented compute, across NVIDIA GPUs, Tenstorrent chips, TPUs and CPUs. New experiments start from [hypothesisloop-experiment-template](https://github.com/scaleresearch/hypothesisloop-experiment-template).
 
-## [tt-rl](https://github.com/scaleresearch/tt-rl)
+### [tt-rl](https://github.com/scaleresearch/tt-rl)
 
 Reinforcement learning on Tenstorrent hardware. DQN, PPO and SAC written natively on TT-NN, with rollouts, replay and gradient updates on the chip, and every trained policy exportable to ONNX.
 
